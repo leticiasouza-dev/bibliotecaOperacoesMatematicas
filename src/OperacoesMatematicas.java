@@ -63,6 +63,22 @@ public class OperacoesMatematicas {
         return volumePrismaRetangular;
     }
 
+    // CALCULOS DE JUROS:
+
+    public static double calculoJurosSimples(double quantiaprincipal, double taxaDeJuros, int tempoEmAnos){
+        double montanteDeJuros = 0;
+        montanteDeJuros += quantiaprincipal * taxaDeJuros * tempoEmAnos;
+
+        return montanteDeJuros;
+    }
+
+
+    public  static double calcularJurosCompostos(double quantiaprincipal, double taxaDeJuros, int numeroDeCompostosAno, int tempoEmAnos){
+        double montanteDeJuros = 0;
+
+        montanteDeJuros += quantiaprincipal * Math.pow(1 + taxaDeJuros / numeroDeCompostosAno, numeroDeCompostosAno * tempoEmAnos);
+        return  montanteDeJuros;
+    }
 
 
 }

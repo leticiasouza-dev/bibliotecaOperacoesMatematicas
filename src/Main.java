@@ -20,5 +20,9 @@ public class Main {
 
         //TESTE DE OPERAÇÃO DE CALCULOS DE VOLUME:
         System.out.println(OperacoesMatematicas.calculoVolumePrismaRetangular(5, 5, 5));
+
+        //TESTE DE OPERAÇÃO DE CALCULO DE JUROS SIMPLES:
+        System.out.println(OperacoesMatematicas.calculoJurosSimples(1000, 0.05, 3));
+        System.out.println(OperacoesMatematicas.calcularJurosCompostos(1000, 0.05, 12, 3));
     }
 }
